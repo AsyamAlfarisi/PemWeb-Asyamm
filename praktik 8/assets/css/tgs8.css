@@ -1,0 +1,53 @@
+body, html {
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+}
+
+.cntr1 {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.cntr2 {
+    flex: 4;
+}
+
+header {
+    background-color: blueviolet;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 10vh;
+}
+
+article {
+    background-color: aquamarine;
+    flex: 4;
+    padding: 10px;
+}
+
+.konten {
+    display: flex;
+    flex: 1;
+    height: 80vh;
+}
+
+aside {
+    background-color: blanchedalmond;
+    flex: 1;
+    padding: 10px;
+}
+
+nav {
+    background-color: rgb(185, 255, 127);
+    flex: 1;
+    padding: 10px;
+}
+
+footer {
+    background-color: rgb(233, 92, 188);
+    padding: 10px;
+    height: 10vh;
+    box-sizing: border-box;
+}
