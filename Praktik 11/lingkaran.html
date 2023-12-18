@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lingkaran</title>
 </head>
 <body>
-    
+    <h1>Lingkaran</h1>
+    <input type="number" id="jarijari">
+    <button onclick="hasilhitunglingkaran()">Hitung</button>
+    <hr>
+    <p>Hasil Luas : <span id="Luas">0</span></p>
+    <p>Hasil Keliling : <span id="Keliling">0</span></p>
+
+<script>
+    function hasilhitunglingkaran() {
+        //ambil nilai dari input id jari
+        let jari = document.getElementById("jarijari").value;
+        //ambil id luas
+        let hluas = document.getElementById("Luas");
+        let hkeliling = document.getElementById("Keliling");
+        //rumus
+        let luas = 3.14*jari**2;
+        let keliling = 3.14*2*jari;
+        // console.log("Luas :" + luas);
+        // console.log("keliling :" + keliling);
+        //menampilkan hasilnya
+        hluas.innerHTML = luas;
+        hkeliling.innerHTML = keliling;
+    }
+</script>
 </body>
 </html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjumlahan</title>
+</head>
+<body>
+    <h1>Penjumlahan</h1>
+    <input type="number" id="1" onchange="penambahan()" />
+    <h3>+</h3>
+    <input type="number" id="2" onchange="penambahan()" />
+    <p>= <span id="hasil"></span></p>
+    <script>
+        function penambahan() {
+            let b1 = document.getElementById("1").value;
+            let b2 = document.getElementById("2").value;
+            let hasil = document.getElementById("hasil")
+            let perhitungan = parseInt(b1) + parseInt(b2);
+            hasil.innerHTML = perhitungan;
+        }
+    </script>
+</body>
+</html>

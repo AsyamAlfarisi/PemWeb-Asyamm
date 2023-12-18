@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs Rupiah</title>
+</head>
+<body>
+    <h1>Kurs Rupiah</h1>
+    <p>Rupiah ke dollar</p>
+    <input type="number" id="rupiah">
+    <button onclick="hasildollar()">Konversi</button>
+    <p>hasil konversi: <span id="rpkedolar">0</span></p>
+    <hr>
+    <p>Dollar ke rupiah</p>
+    <input type="number" id="dollar" >
+    <button onclick="hasilrupiah()">konversi</button>
+    <P>Hasil konversi <span id="dolarkerp">0</span></P>
+       
+
+    <script>
+        function hasildollar(){
+            let rupiah = document.getElementById("rupiah").value
+            let hasil = document.getElementById("rpkedolar")
+            let hasilkonversi = rupiah/14650
+            hasil.innerHTML = hasilkonversi
+        }
+        function hasilrupiah(){
+            let dollar = document.getElementById("dollar").value
+            let hasil = document.getElementById("dolarkerp")
+            let dollarkerp = dollar*14650
+            hasil.innerHTML = dollarkerp
+        }
+
+        
+
+    </script>
+</body>
+</html>

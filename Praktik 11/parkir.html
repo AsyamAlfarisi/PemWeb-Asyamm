@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biaya Parkir</title>
+</head>
+<body>
+    <h1>Biaya Parkir</h1>
+    <p>jam masuk:</p>
+    <input type="number" id="jammasuk">
+    <p>jam keluar</p>
+    <input type="number" id="jamkeluar" onchange="hitungbiayaparkir()">
+    <hr>
+    <p>durasi parkir: <span id="dukir">0</span></p>
+    <p>biaya parkir: <span id="bikir">0</span></p>
+
+    <script>
+        function hitungbiayaparkir(){
+            let jamMasuk = document.getElementById("jammasuk").value
+            let jamKeluar = document.getElementById("jamkeluar").value
+            let durasi = document.getElementById("dukir")
+            let biaya = document.getElementById("bikir")
+            let Lamamarkir = jamKeluar-jamMasuk
+            let jampertama = 3000 
+            if (Lamamarkir > 2) {
+                jampertama += (Lamamarkir-2)*1000
+            }
+            durasi.innerHTML = Lamamarkir
+            biaya.innerHTML = jampertama
+        }
+    </script>
+</body>
+</html>
